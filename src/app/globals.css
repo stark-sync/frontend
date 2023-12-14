@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root, .light, .light-theme {
+  --theme-toggle-sun-icon-display: block;
+  --theme-toggle-moon-icon-display: none;
+}
+.dark, .dark-theme {
+  --theme-toggle-sun-icon-display: none;
+  --theme-toggle-moon-icon-display: block;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
